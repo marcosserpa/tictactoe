@@ -145,7 +145,9 @@ class GameState
 
 # Name input
 form = "
-  <div class='alerts welcome'></div>
+  <div>
+    <p><a href='/leaderboard'>Ranking</a></p>
+  </div>
   <div class='notifications'></div>
   <div id='form'>
     <div class='input-group'>

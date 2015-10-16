@@ -5,24 +5,7 @@
     = stylesheet_link_tag 'application'
     -# = stylesheet_link_tag 'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'
     = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Chewy'
-    = javascript_include_tag 'http://cdnjs.cloudflare.com/ajax/libs/react/0.11.0/react.min.js'
-    = javascript_include_tag 'http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js'
-    = javascript_include_tag 'application'
   %body
-    .alerts.welcome
-    .notifications
-
-    %div#form
-      .input-group
-        .input-group-addon Player X
-        %input.form-control{ id: "player_x", type: 'text', value: "" }/
-      .input-group
-        .input-group-addon Player O
-        %input.form-control{ id: "player_o", type: "text", value: "" }/
-
-      .text-center
-        %input#submit.btn.btn-lg.btn-primary{:type => "button", :value => "Start", :onClick => "verify_input();"}/
-
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"}
 
     = yield

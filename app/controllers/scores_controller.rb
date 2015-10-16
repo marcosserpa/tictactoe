@@ -5,11 +5,9 @@ class ScoresController < ApplicationController
   end
 
   def leaderboard
-    @ranking = Score.order(wins: :desc)
+    ranking = Score.order(wins: :desc)
 
-    respond_to do |format|
-      format.html { redirect_to @ranking }
-    end
+    render :leaderboard, locals: { ranking: ranking }
   end
 
   private
