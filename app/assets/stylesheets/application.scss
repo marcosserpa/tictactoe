@@ -464,3 +464,235 @@ body {
     }
   }
 }
+
+
+
+// // LEADERBOARD
+// //colors
+// $beige: beige;
+// $color_mine_shaft_approx: #333;
+// $white: #fff;
+//
+// //fonts
+// $font_0: Chewy;
+// $font_1: cursive;
+// $font_2: Helvetica Neue;
+// $font_3: Helvetica;
+// $font_4: Arial;
+// $font_5: sans-serif;
+//
+// .alerts {
+// 	display: none;
+// }
+// .notifications {
+// 	display: none;
+// 	max-width: 250px;
+// 	width: 35%;
+// 	padding: 1em;
+// 	text-align: center;
+// 	background-color: $beige;
+// 	float: left;
+// }
+// * {
+// 	//Instead of the line below you could use @include box-sizing($bs)
+// 	box-sizing: border-box;
+// 	font-family: $font_0, $font_1;
+// }
+// html {
+// 	font-family: $font_5;
+// }
+// Pseudo {
+// 	::before element *::before {
+// 		animation-play-state: paused !important;
+// 	}
+// 	::after element *::before {
+// 		animation-play-state: paused !important;
+// 	}
+// }
+// *::after {
+// 	animation-play-state: paused !important;
+// 	animation-play-state: paused !important;
+// }
+// :after {
+// 	//Instead of the line below you could use @include box-sizing($bs)
+// 	box-sizing: border-box;
+// }
+// :before {
+// 	//Instead of the line below you could use @include box-sizing($bs)
+// 	box-sizing: border-box;
+// }
+// element.style {
+// }
+// user agent stylesheetdiv {
+// 	display: block;
+// }
+// Inherited from {
+// 	div.wrapper * {
+// 		font-family: $font_0, $font_1;
+// 	}
+// 	body body {
+// 		font-family: $font_2, $font_3, $font_4, $font_5;
+// 		font-size: 14px;
+// 		line-height: 1.42857143;
+// 		color: $color_mine_shaft_approx;
+// 		background-color: $white;
+// 	}
+// 	html html {
+// 		font-size: 10px;
+// 	}
+// }
+//
+// //colors
+// $color_mine_shaft_approx: #333;
+// $white: #fff;
+//
+// //fonts
+// $font_0: Chewy;
+// $font_1: cursive;
+// $font_2: Helvetica Neue;
+// $font_3: Helvetica;
+// $font_4: Arial;
+// $font_5: sans-serif;
+//
+// form {
+// 	clear: both;
+// 	width: 400px;
+// 	margin: 0 auto;
+// 	max-width: 500px;
+// }
+// * {
+// 	//Instead of the line below you could use @include box-sizing($bs)
+// 	box-sizing: border-box;
+// 	font-family: $font_0, $font_1;
+// }
+// html {
+// 	font-family: $font_5;
+// }
+// Pseudo {
+// 	::before element *::before {
+// 		animation-play-state: paused !important;
+// 	}
+// 	::after element *::before {
+// 		animation-play-state: paused !important;
+// 	}
+// }
+// *::after {
+// 	animation-play-state: paused !important;
+// 	animation-play-state: paused !important;
+// }
+// :after {
+// 	//Instead of the line below you could use @include box-sizing($bs)
+// 	box-sizing: border-box;
+// }
+// :before {
+// 	//Instead of the line below you could use @include box-sizing($bs)
+// 	box-sizing: border-box;
+// }
+// element.style {
+// }
+// user agent stylesheetform {
+// 	display: block;
+// 	margin-top: 0;
+// }
+// Inherited from {
+// 	div.wrapper * {
+// 		font-family: $font_0, $font_1;
+// 	}
+// 	body body {
+// 		font-family: $font_2, $font_3, $font_4, $font_5;
+// 		font-size: 14px;
+// 		line-height: 1.42857143;
+// 		color: $color_mine_shaft_approx;
+// 		background-color: $white;
+// 	}
+// 	html html {
+// 		font-size: 10px;
+// 	}
+// }
+
+
+
+
+
+
+
+// Leaderboard
+//colors
+$color_calypso_approx: #31708f;
+$color_link_water_approx: #d9edf7;
+$color_charlotte_approx: #bce8f1;
+$color_half_dutch_white_approx: cornsilk;
+$crimson:  crimson;
+$color_dodger_blue_approx: #3997ff;
+$beige: beige;
+$color_gray_approx: #7f7f7e;
+
+//fonts
+$font_0: Chewy;
+$font_1: cursive;
+
+* {
+	font-family: $font_0, $font_1;
+}
+body {
+	margin: 2em;
+}
+.wrapper {
+	width: 700px;
+	margin: 0 auto;
+}
+.alerts {
+	color: $color_calypso_approx;
+	background-color: $color_link_water_approx;
+	border-color: $color_charlotte_approx;
+	font-size: 1.75em;
+	margin-bottom: 0.7em;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 5px;
+	max-width: 250px;
+	width: 35%;
+	padding: 0.5em;
+	text-align: center;
+	float: left;
+	display: none;
+}
+.welcome {
+	float: none;
+	width: 55%;
+	margin: 15px auto;
+	max-width: 400px;
+}
+
+.notifications {
+	max-width: 250px;
+	width: 35%;
+	padding: 1em;
+	text-align: center;
+	background-color: $beige;
+	float: left;
+	display: none;
+	p {
+		color: $color_gray_approx;
+		font-size: 1.2em;
+	}
+}
+form {
+	clear: both;
+	width: 400px;
+	margin: 0 auto;
+	max-width: 500px;
+	div:last-of-type {
+		margin-top: 10px;
+	}
+}
+.input-group {
+	width: 100%;
+	margin-bottom: 5px;
+}
+.input-group-addon {
+	width: 75px;
+}
+a.play-again {
+	font-size: 1.5em;
+	cursor: pointer;
+}
