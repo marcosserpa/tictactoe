@@ -1,0 +1,466 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+// colors
+$yellow: #ff0;
+$black: #000;
+$silver: #c0c0c0;
+
+// fonts
+$font_0: sans-serif;
+$font_1: monospace;
+
+// @extend-elements
+// original selectors : sub, sup
+%extend_1 {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+// original selectors: button, input, optgroup, select, textarea
+%extend_2 {
+ 	color: inherit;
+ 	font: inherit;
+ 	margin: 0;
+}
+
+html {
+ 	font-family: $font_0;
+
+ 	input[type="button"] {
+ 		cursor: pointer;
+ 	}
+ 	input[disabled] {
+ 		cursor: default;
+ 	}
+}
+
+body {
+ 	margin: 0;
+}
+
+article {
+ 	display: block;
+}
+
+aside {
+ 	display: block;
+}
+
+details {
+ 	display: block;
+}
+
+figcaption {
+ 	display: block;
+}
+
+figure {
+ 	display: block;
+ 	margin: 1em 40px;
+}
+
+footer {
+ 	display: block;
+}
+
+header {
+ 	display: block;
+}
+
+hgroup {
+ 	display: block;
+}
+
+main {
+ 	display: block;
+}
+
+menu {
+ 	display: block;
+}
+
+nav {
+ 	display: block;
+}
+
+section {
+ 	display: block;
+}
+
+summary {
+ 	display: block;
+}
+
+audio {
+ 	display: inline-block;
+ 	vertical-align: baseline;
+
+ 	&:not([controls]) {
+ 		display: none;
+ 		height: 0;
+ 	}
+}
+
+canvas {
+ 	display: inline-block;
+ 	vertical-align: baseline;
+}
+
+progress {
+ 	display: inline-block;
+ 	vertical-align: baseline;
+}
+
+video {
+ 	display: inline-block;
+ 	vertical-align: baseline;
+}
+
+[hidden] {
+ 	display: none;
+}
+
+template {
+ 	display: none;
+}
+
+a {
+ 	background-color: transparent;
+
+ 	&:active {
+ 		outline: 0;
+ 	}
+
+	&:hover {
+ 		outline: 0;
+ 	}
+}
+
+abbr[title] {
+ 	border-bottom: 1px dotted;
+}
+
+b {
+ 	font-weight: bold;
+}
+
+strong {
+ 	font-weight: bold;
+}
+
+dfn {
+ 	font-style: italic;
+}
+
+h1 {
+ 	font-size: 2em;
+ 	margin: 0.67em 0;
+}
+
+mark {
+ 	background: $yellow;
+ 	color: $black;
+}
+
+small {
+ 	font-size: 80%;
+}
+
+sub {
+ 	@extend %extend_1;
+ 	bottom: -0.25em;
+}
+
+sup {
+ 	@extend %extend_1;
+ 	top: -0.5em;
+}
+
+img {
+ 	border: 0;
+}
+
+hr {
+ 	box-sizing: content-box;
+ 	height: 0;
+}
+
+pre {
+ 	overflow: auto;
+ 	font-family: $font_1, $font_1;
+ 	font-size: 1em;
+}
+
+code {
+ 	font-family: $font_1, $font_1;
+ 	font-size: 1em;
+}
+
+kbd {
+ 	font-family: $font_1, $font_1;
+ 	font-size: 1em;
+}
+
+samp {
+ 	font-family: $font_1, $font_1;
+ 	font-size: 1em;
+}
+
+button {
+ 	@extend %extend_2;
+ 	overflow: visible;
+ 	text-transform: none;
+ 	cursor: pointer;
+}
+
+input {
+ 	@extend %extend_2;
+ 	line-height: normal;
+}
+
+optgroup {
+ 	@extend %extend_2;
+ 	font-weight: bold;
+}
+
+select {
+ 	@extend %extend_2;
+ 	text-transform: none;
+}
+
+textarea {
+ 	@extend %extend_2;
+ 	overflow: auto;
+}
+
+input[type="reset"] {
+ 	cursor: pointer;
+}
+input[type="submit"] {
+ 	cursor: pointer;
+}
+
+button[disabled] {
+ 	cursor: default;
+}
+button::-moz-focus-inner {
+ 	border: 0;
+ 	padding: 0;
+}
+
+input::-moz-focus-inner {
+ 	border: 0;
+ 	padding: 0;
+}
+input[type="checkbox"] {
+ 	box-sizing: border-box;
+ 	padding: 0;
+}
+input[type="radio"] {
+ 	box-sizing: border-box;
+ 	padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button {
+ 	height: auto;
+}
+input[type="number"]::-webkit-outer-spin-button {
+ 	height: auto;
+}
+input[type="search"] {
+ 	box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button {
+}
+input[type="search"]::-webkit-search-decoration {
+}
+
+fieldset {
+ 	border: 1px solid $silver;
+ 	margin: 0 2px;
+ 	padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+ 	border: 0;
+ 	padding: 0;
+}
+
+table {
+ 	border-collapse: collapse;
+ 	border-spacing: 0;
+}
+
+td {
+ 	padding: 0;
+}
+
+th {
+ 	padding: 0;
+}
+
+svg:not(:root) {
+ 	overflow: hidden;
+}
+
+$body-background-color: #e6e6e6;
+$cell-background-color: #9a8297;
+$cell-hover-background-color: #d0782a;
+
+$field-border-radius: 6px;
+$field-size: 300px;
+
+$tic-tac-toe-cell-padding: 10px;
+
+$field-padding: 5px;
+
+$cell-margin: 5px;
+$cell-size: $field-size / 3 - $cell-margin * 2;
+
+$symbol-thickness: 6px;
+$symbol-roundness: 3px;
+$symbol-size: 50px;
+
+$oSize: $symbol-size - $symbol-thickness;
+
+$new-game-button--height: 20px;
+$new-game-button--color: #9a8297;
+$new-game-button--hover-color: #d0782a;
+$new-game-button--border-radius: 20px;
+
+$title-label-color: #d0782a;
+
+body {
+  background-color: $body-background-color;
+
+  .tic-tac-toe--field {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    border-radius: $field-border-radius;
+    width: $field-size;
+    height: $field-size;
+    padding: $field-padding;
+
+    .tic-tac-toe--end-game-popover {
+      width: $field-size;
+      height: $field-size;
+      background-color: white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: $field-border-radius;
+      transition: visibility 0s 0.3s, opacity 0.3s linear;
+      opacity: 1;
+      visibility: visible;
+
+      &.hidden {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .tic-tac-toe--new-game-button {
+        height: $new-game-button--height;
+        background-color: $new-game-button--color;
+        border-radius: $new-game-button--border-radius;
+        color: white;
+        margin: auto;
+        padding: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: $new-game-button--hover-color;
+        }
+      }
+
+      h1.tic-tac-toe--title-label {
+        color: $title-label-color;
+        margin: 30px auto;
+        text-align: center;
+      }
+    }
+
+    .tic-tac-toe--cells-matrix {
+      display: flex;
+      flex-wrap: wrap;
+
+      .tic-tac-toe-cell {
+        background-color: $cell-background-color;
+        margin: $cell-margin;
+        width: $cell-size;
+        height: $cell-size;
+        border-radius: $field-border-radius;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        position: relative;
+
+        &:hover {
+          background-color: $cell-hover-background-color;
+        }
+
+        &.xSymbol {
+          &:before, &:after {
+            position: absolute;
+            width: $symbol-thickness;
+            height: $symbol-size;
+            background-color: white;
+            display: block;
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: $symbol-roundness;
+          }
+
+          &:before {
+            transform: translate(-50%, -50%) rotate(45deg);
+          }
+
+          &:after {
+            transform: translate(-50%, -50%) rotate(-45deg);
+          }
+        }
+
+        &.oSymbol {
+          &:after {
+            position: absolute;
+            display: block;
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            border: solid $symbol-thickness white;
+            width: $oSize;
+            height: $oSize;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+  }
+}

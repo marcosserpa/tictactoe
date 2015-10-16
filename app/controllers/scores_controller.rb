@@ -2,7 +2,6 @@ class ScoresController < ApplicationController
 
   def save
     @score = Score.save(params[:name])
-
     @ranking = Score.order(wins: :desc)
 
     respond_to do |format|
