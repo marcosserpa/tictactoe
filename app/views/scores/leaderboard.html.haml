@@ -1,0 +1,16 @@
+%table
+  %thead
+    %tr
+      %th Name -
+      %th Wins
+%tbody
+  - ranking.each do |person|
+    %tr
+      %td
+        = "#{ person.name } - "
+      %td
+        = "#{ person.wins }"
+    %br
+%br
+
+= link_to "Back to game", root_path
