@@ -122,6 +122,8 @@ class GameState
 
   # Restart variables to restart game
   reset: ->
+    @persist(@winner) unless (@winner == 'none' || @winner == null)
+
     @isX = true
     @playerX = 0
     @playerO = 0
@@ -131,6 +133,15 @@ class GameState
 
   showAlert: (msg) ->
     $(".alerts").text(msg).slideDown()
+
+  persist: (winner) ->
+    $.ajax
+      type: 'POST'
+      url: "/save"
+      dataType: 'json'
+      data: { name: winner }
+      success: (data) ->
+        console.log("SUCCESS")
 
 # Name input
 form = "
